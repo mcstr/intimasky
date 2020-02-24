@@ -9,19 +9,17 @@ class MasksController < ApplicationController
   end
 
   def new
-    # @user = User.find(params[:user_id])
-    # @mask = Mask.new
+    @mask = Mask.new
   end
 
   def create
-    # @user = User.find(params[:user_id])
-    # @mask = Mask.new(mask_params)
-    # @mask.user = @user
-    # if @mask.save
-    #   redirect_to mask_path(@mask)
-    # else
-    #   render :new
-    # end
+    @mask = Mask.new(mask_params)
+    @mask.user = current_user
+    if @mask.save
+      redirect_to mask_path(@mask)
+    else
+      render :new
+    end
   end
 
   def edit
@@ -33,8 +31,8 @@ class MasksController < ApplicationController
   def destroy
   end
 
-  # private
-  # def mask_params
-  #   params.require(:mask).permit(:name, :description, :category, :price)
-  # end
+  private
+  def mask_params
+    params.require(:mask).permit(:name, :description, :category, :price)
+  end
 end
