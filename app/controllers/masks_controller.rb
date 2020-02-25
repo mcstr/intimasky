@@ -30,10 +30,12 @@ class MasksController < ApplicationController
     @mask = Mask.find(params[:id])
     @mask.update(mask_params)
     redirect_to mask_path(@mask)
-
   end
 
   def destroy
+    @mask = Mask.find(params[:id])
+    @mask.destroy
+    redirect_to masks_path
   end
 
   private
