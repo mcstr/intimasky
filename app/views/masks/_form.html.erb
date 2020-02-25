@@ -1,0 +1,7 @@
+<%= simple_form_for @mask do |f|%>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :price, label: 'Price per day' %>
+  <%= f.input :category, collection: CATEGORIES %>
+  <%= f.submit %>
+<% end %>
