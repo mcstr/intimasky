@@ -1,0 +1,5 @@
+
+<%= simple_form_for [@mask, @booking] do |f| %>
+  <%= f.input :start_date, as: :string, input_html: { id: "start"}, label: "Booking dates"%>
+  <%= f.button :submit, class: "button" %>
+<% end %>
