@@ -1,7 +1,33 @@
 .card-product {
-  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  background: #333;
+  width: 300px;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #aaa;
+  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+    0 0 1rem rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
+
 .card-product img {
-  width: 50%;
+  max-width: 90%;
+  max-height: 50%;
+  margin: 20px;
+  object-fit: contain;
+  border: 2px solid #A01170;
+}
+
+.card-product a {
+  text-decoration:none;
+  color: white;
+      &:hover{
+      text-decoration: none;
+      color: #A01170;
+    }
 }
