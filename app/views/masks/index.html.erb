@@ -1,0 +1,11 @@
+<h1>Masks:</h1>
+
+<% if @masks %>
+  <ul>
+    <% @masks.each do |m| %>
+      <li><%= link_to m.name, mask_path(m) %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<!-- if statement because of Heroku -->
