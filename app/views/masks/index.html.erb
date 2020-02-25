@@ -1,12 +1,17 @@
-<h1>Masks:</h1>
+<div class="container pt-5 text-center">
+  <h1>What do you desire?</h1>
+  <% if @masks %>
+    <div class="row justify-content-around">
+      <% @masks.each do |mask| %>
+      <div class="card-product m-4 col-lg-3 col-md-4 col-sm-12">
+        <%= cl_image_tag mask.photo.key%>
+        <%= link_to(mask.name, mask_path(mask)) %>
+      </div>
+      <% end %>
+  </div>
+  <% end %>
 
-<% if @masks %>
-  <ul>
-    <% @masks.each do |m| %>
-      <li><%= link_to m.name, mask_path(m) %></li>
-    <% end %>
-  </ul>
-<% end %>
+</div>
 
 <!-- if statement because of Heroku -->
 
