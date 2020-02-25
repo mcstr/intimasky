@@ -1,8 +1,9 @@
 <h1><%= @mask.name %></h1>
 <h2><%= @mask.price %>€</h2>
 <p><%= @mask.description %></p>
-<%= cl_image_tag @mask.photo.key, height: 300, width: 400, crop: :fill %>
-<!-- <p>@mask.category</p> -->
+<% if @mask.photo.attached? %>
+  <%= cl_image_tag @mask.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
 <p><%= @mask.category %></p>
 <%= link_to 'Edit the mask', edit_mask_path(@mask) %>
 <%= link_to 'See all masks', masks_path %>
