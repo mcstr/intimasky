@@ -1,3 +1,4 @@
+CATEGORIES = ['dog', 'cat']
 class Mask < ApplicationRecord
   belongs_to :user
   has_many :bookings
