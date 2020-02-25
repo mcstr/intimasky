@@ -1,3 +1,4 @@
+CATEGORIES = ['dog', 'cat']
 class Mask < ApplicationRecord
   has_one_attached :photo
   belongs_to :user
@@ -5,4 +6,5 @@ class Mask < ApplicationRecord
   validates :name, presence: :true
   validates :price, presence: :true
   validates :photo, attached:true
+  validates :category, presence: true
 end
