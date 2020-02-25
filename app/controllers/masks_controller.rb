@@ -23,9 +23,14 @@ class MasksController < ApplicationController
   end
 
   def edit
+    @mask = Mask.find(params[:id])
   end
 
   def update
+    @mask = Mask.find(params[:id])
+    @mask.update(mask_params)
+    redirect_to mask_path(@mask)
+
   end
 
   def destroy
