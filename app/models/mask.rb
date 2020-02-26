@@ -5,7 +5,7 @@ class Mask < ApplicationRecord
   has_many :bookings, dependent: :destroy
   validates :name, presence: :true
   validates :price, presence: :true
-  validates :photo, attached:true
+  validates :photo, attached: true
   validates :category, presence: true
 
   def unavailable_dates

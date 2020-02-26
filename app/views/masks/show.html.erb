@@ -1,11 +1,32 @@
-<h1><%= @mask.name %></h1>
-<h2><%= @mask.price %>€</h2>
-<p><%= @mask.description %></p>
-<% if @mask.photo.attached? %>
-  <%= cl_image_tag @mask.photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
-<p><%= @mask.category %></p>
-<%= link_to 'Book the mask', new_mask_booking_path(@mask) %>
-<%= link_to 'Edit the mask', edit_mask_path(@mask) %>
-<%= link_to 'See all masks', masks_path %>
-<%= link_to 'Delete the mask!', mask_path(@mask), method: :delete %>
+<div class="container-mask pt-5">
+  <h1>
+    <%= @mask.name.capitalize %>
+  </h1>
+    <div class= "card-product m4 col-lg-8" id= "card-show">
+      <div class= "card-content-container">
+          <div class="card__image-container align-items-center d-flex" id= "card-pic" >
+              <% if @mask.photo.attached? %>
+              <%= cl_image_tag @mask.photo.key%>
+              <% end %>
+          </div>
+          <div class="card__content" id = "card-info">
+            <h2>
+             <%= @mask.price %>€
+            </h2>
+            <p>
+            Description: <%= @mask.description %>
+            </p>
+            <p>
+              <%= @mask.category %>
+            </p>
+          </div>
+      <br>
+    </div>
+  </div>
+        <ul class = "action-list">
+          <li class = "masks-actions button"><%= link_to 'Book', new_mask_booking_path(@mask) %></li>
+          <li class = "masks-actions button"><%= link_to 'Edit', edit_mask_path(@mask) %></li>
+          <li class = "masks-actions button"><%= link_to 'All', masks_path %></li>
+          <li class = "masks-actions button"><%= link_to 'Delete', mask_path(@mask), method: :delete %></li>
+          </ul>
+</div>
