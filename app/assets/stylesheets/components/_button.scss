@@ -1,6 +1,5 @@
 .button {
     font-family: 'Raleway', sans-serif;
-    display: -webkit-inline-box;
     display: inline-flex;
     height: 40px;
     width: 150px;
@@ -21,6 +20,7 @@
         background-color:white;
         text-decoration: none;
         color: #A01170;
+        transition-duration: 0.5s
       }
 
-}
+

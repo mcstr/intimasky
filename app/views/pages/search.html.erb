@@ -1,25 +1,23 @@
 <div class="container" id="search">
-    <br>
-    <br>
-    <h1>What type of mask are you looking for?</h1>
-    <form>
-        <div class="form-group text-center">
-            <!-- <label for="exampleInputEmail1">Search</label> -->
-            <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search">
-            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <br>
+    <section class="search-header">
+        <h1>What type of mask are you looking for?</h1>
+        <form>
+            <div class="form-group text-center search-form">
+                <!-- <label for="exampleInputEmail1">Search</label> -->
+                <input type="text" class="form-control text-center search-bar" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
     <hr>
-    <h2>Featured Categories</h2>
-    <br>
     <section class="featured-row">
+        <h2>Featured Categories</h2>
         <ul class="featered-categories">
-            <li class="card"><a href="/masks">Cat</a></li>
-            <li class="card">Dog</li>
-            <li class="card">Gas</li>
+            <li class="card border-0" id="card1"><a href="/masks">
+              <%= link_to 'Cat', '/masks' %></a></li>
+            <li class="card border-0" id="card2"><a href="">Horse</a></li>
+            <li class="card border-0" id="card3"><a href="">Gas</a></li>
         </ul>
     </section>
-    <br><br><br><br>
 </div>
