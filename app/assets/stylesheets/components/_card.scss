@@ -21,6 +21,10 @@
   margin: 20px;
   object-fit: contain;
   border: 2px solid #A01170;
+  filter: grayscale(90%);
+    &:hover{
+      filter: grayscale(0%);
+    }
 }
 
 .card-product a {
