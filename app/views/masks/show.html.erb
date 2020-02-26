@@ -5,6 +5,7 @@
   <%= cl_image_tag @mask.photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 <p><%= @mask.category %></p>
+<%= link_to 'Book the mask', new_mask_booking_path(@mask) %>
 <%= link_to 'Edit the mask', edit_mask_path(@mask) %>
 <%= link_to 'See all masks', masks_path %>
 <%= link_to 'Delete the mask!', mask_path(@mask), method: :delete %>
