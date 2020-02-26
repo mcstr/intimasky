@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   position: relative;
   background: #333;
   width: 300px;
@@ -19,8 +18,7 @@
   display: block;
   max-width: 90%;
   max-height: 50%;
-  margin: 20px;
-  object-fit: contain;
+  margin: 20px auto;
   border: 3px solid #A01170;
   filter: grayscale(60%);
     &:hover{
