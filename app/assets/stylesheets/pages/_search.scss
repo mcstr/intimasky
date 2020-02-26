@@ -1,0 +1,19 @@
+#search.container {
+    margin-top: 76px;
+    height: 100%;
+    text-align: center;
+}
+
+.featered-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+li.card{
+ background-color: red;
+ display: inline;
+ height: 200px;
+ width: 150px;
+}
+
