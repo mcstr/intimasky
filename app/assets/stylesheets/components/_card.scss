@@ -16,12 +16,13 @@
 
 
 .card-product img {
+  display: block;
   max-width: 90%;
   max-height: 50%;
   margin: 20px;
   object-fit: contain;
-  border: 2px solid #A01170;
-  filter: grayscale(90%);
+  border: 3px solid #A01170;
+  filter: grayscale(60%);
     &:hover{
       filter: grayscale(0%);
     }
