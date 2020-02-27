@@ -1,12 +1,16 @@
 class MasksController < ApplicationController
   before_action :authenticate_user!
   def index
-    @masks = Mask.all
-    # if params[:query].present?
-    #   @masks = Mask.where(name: params[:query])
-    # else
-    #   @masks = Mask.all
-    # end
+    if params[:search].present?
+      sql_query = "name ILIKE :query
+      OR description ILIKE :query
+      OR category ILIKE :query
+      OR address ILIKE :query
+      "
+      @masks = Mask.where(sql_query, query: "%#{params[:search][:query]}%")
+    else
+      @masks = Mask.all
+    end
   end
 
   def show
@@ -47,4 +51,8 @@ class MasksController < ApplicationController
   def mask_params
     params.require(:mask).permit(:name, :description, :category, :price, :photo, :address)
   end
+
+  # def search_params
+  #   params.require(:search).permit(:query)
+  # end
 end
