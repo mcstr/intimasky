@@ -27,21 +27,8 @@
     text-shadow: 0px 0px 1px #DE5887 !important;
 }
 
-.featered-categories {
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
-}
 
-li.card {
-    background-color: pink;
-    display: inline;
-    height: 375px;
-    width: 275px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 
-}
 
 #card1 {
     background: linear-gradient(rgba(169, 115, 114, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ebayimg.com/images/g/M8cAAOSwUDldNeW2/s-l1600.jpg');
@@ -52,7 +39,6 @@ li.card {
 
 #card2 {
     background: linear-gradient(rgba(169, 115, 114, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2315712/pexels-photo-2315712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,4 +71,12 @@ li.card {
     box-shadow: 0px 0px 5px #DE5887 !important;
     color: #DE5887 !important;
     font-weight: bold !important;
+}
+
+.feature-card{
+    background-color: pink;
+    display: inline;
+    height: 375px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
