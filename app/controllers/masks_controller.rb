@@ -40,6 +40,6 @@ class MasksController < ApplicationController
 
   private
   def mask_params
-    params.require(:mask).permit(:name, :description, :category, :price, :photo)
+    params.require(:mask).permit(:name, :description, :category, :price, :photo, :address)
   end
 end
