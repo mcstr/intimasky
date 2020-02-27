@@ -1,32 +1,49 @@
-<div class="container-mask pt-5">
-  <h1>
-    <%= @mask.name.capitalize %>
-  </h1>
-    <div class= "card-product m4 col-lg-8" id= "card-show">
-      <div class= "card-content-container">
-          <div class="card__image-container align-items-center d-flex" id= "card-pic" >
-              <% if @mask.photo.attached? %>
-              <%= cl_image_tag @mask.photo.key%>
-              <% end %>
-          </div>
-          <div class="card__content" id = "card-info">
-            <h2>
-             <%= @mask.price %>€
-            </h2>
-            <p>
+<div class="show-main-container">
+  <div class="show-container">
+    <h1>
+      <%= @mask.name.capitalize %>
+    </h1>
+    <div class="show-content">
+      <div id="image-show" class="col">
+        <% if @mask.photo.attached? %>
+         <%= cl_image_tag @mask.photo.key%>
+        <% end %>
+      </div>
+      <div id="image-info" class="col">
+        <div id = "mask-name">
+          <h2>
+            <%= @mask.name.capitalize %> ölkjasdölfkjasldfjölajslkföjs
+          </h2>
+        </div>
+        <div id="mask-price">
+          <h2>
+            <%= @mask.price %>,00€
+          </h2>
+        </div>
+        <div id="mask-description">
+          <p>
             Description: <%= @mask.description %>
-            </p>
-            <p>
-              <%= @mask.category %>
-            </p>
-          </div>
-      <br>
+          </p>
+        </div>
+        <div id="mask-category">
+          <p>
+            Category:<%= @mask.category %>
+          </p>
+        </div>
+        <div>
+          <p class = "masks-actions button" id="button-book"><%= link_to 'Book', new_mask_booking_path(@mask) %>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="show-buttons">
+    <ul class = "action-list">
+    <li class = "masks-actions button"><%= link_to 'Edit', edit_mask_path(@mask) %></li>
+    <li class = "masks-actions button"><%= link_to 'All', masks_path %></li>
+    <li class = "masks-actions button"><%= link_to 'Delete', mask_path(@mask), method: :delete %></li>
+    </ul>
+    </div>
     </div>
   </div>
-        <ul class = "action-list">
-          <li class = "masks-actions button"><%= link_to 'Book', new_mask_booking_path(@mask) %></li>
-          <li class = "masks-actions button"><%= link_to 'Edit', edit_mask_path(@mask) %></li>
-          <li class = "masks-actions button"><%= link_to 'All', masks_path %></li>
-          <li class = "masks-actions button"><%= link_to 'Delete', mask_path(@mask), method: :delete %></li>
-          </ul>
-</div>
+
