@@ -1,7 +1,7 @@
 .card-product {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   background: #333;
   width: 300px;
@@ -39,4 +39,8 @@
       text-decoration: none;
       color: #A01170;
     }
+}
+
+.card-product .submit-button {
+
 }
