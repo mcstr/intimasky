@@ -19,6 +19,8 @@
 
 .card-product img {
   display: block;
+  width: 97%;
+  object-fit: cover;
   max-width: 97%;
   max-height: 50%;
   margin: 20px auto;
