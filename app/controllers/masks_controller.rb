@@ -2,6 +2,11 @@ class MasksController < ApplicationController
   before_action :authenticate_user!
   def index
     @masks = Mask.all
+    # if params[:query].present?
+    #   @masks = Mask.where(name: params[:query])
+    # else
+    #   @masks = Mask.all
+    # end
   end
 
   def show

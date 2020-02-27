@@ -2,16 +2,15 @@
     <div class="" id="search">
         <section class="search-header d-flex flex-column">
             <h1>What type of mask are you looking for?</h1>
-            <form>
-                <div class="form-group text-center search-form">
-                    <!-- <label for="exampleInputEmail1">Search</label> -->
-                    <input type="text" class="form-control text-center search-bar" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search">
-                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            <div class="text-center search-form">
+              <%= simple_form_for :search, method: :get, url: masks_path do |f| %>
+                <%= f.input :query, label: false, placeholder: "Search", input_html: { class: "text-center search-bar"} %>
+                <%= f.submit 'Submit', class: "button" %>
+              <% end %>
+            </div>
 
-                <button type="submit" class="button">Submit</button>
-                </div>
-            </form>
         </section>
+      </div>
         <hr>
 <h2 class="text-center pb-5">Featured Masks</h2>
             <div class="row justify-content-around">
