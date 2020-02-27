@@ -7,6 +7,7 @@ class Mask < ApplicationRecord
   validates :price, presence: :true
   validates :photo, attached: true
   validates :category, presence: true
+  validates :address, presence: true
 
   def unavailable_dates
     bookings.pluck(:start_date, :end_date).map do |range|
