@@ -10,18 +10,39 @@
     text-decoration: none;
     font-size: .8em;
     letter-spacing: 1.5px;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     overflow: hidden;
 
     &:hover{
-        background-color:white;
-        text-decoration: none;
-        color: #A01170;
-        transition-duration: 0.5s
+      background-color:white;
+      text-decoration: none;
+      color: #A01170;
+      transition-duration: 0.5s
       }
 
+}
 
+.submit-button {
+  background-color: #A01170;
+  color: white;
+  border: 2px solid white;
+  font-family: 'Raleway', sans-serif;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  margin: 20px 20px 20px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+    &:hover{
+      text-decoration: none;
+      background-color: #851961;
+      color: white;
+      transition-duration: 0.5s
+      }
 }
