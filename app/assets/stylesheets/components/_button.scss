@@ -39,10 +39,10 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition-duration: 0.5s;
     &:hover{
       text-decoration: none;
       background-color: #851961;
       color: white;
-      transition-duration: 0.5s
       }
 }
