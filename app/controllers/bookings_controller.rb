@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_mask, only: [:new, :create]
+  before_action :set_mask, only: [:new, :create, :destroy]
 
   def index
      @bookings = current_user.bookings
@@ -12,6 +12,10 @@ class BookingsController < ApplicationController
   def new
     @booking = Booking.new
 
+  end
+
+  def destroy
+    @booking.destroy
   end
 
   def create
