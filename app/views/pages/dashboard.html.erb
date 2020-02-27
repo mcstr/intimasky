@@ -1,0 +1,44 @@
+<div class="container-mask pt-5">
+  <h1 class="">Your Bookings</h1>
+  <% if @bookings %>
+      <div class="row justify-content-around text-center">
+        <% @bookings.each do |booking| %>
+          <div class="card-product m-4 col-lg-2 col-md-4 col-sm-12">
+            <div class="border-card">
+              <div class="card__image-container">
+                <%= cl_image_tag booking.mask.photo.key%>
+              </div>
+            </div>
+            <div class="card__content">
+              <h5><%= link_to(booking.mask.name, mask_path(booking.mask)) %></h3>
+              <h6>From <%= booking.start_date %></h6>
+              <h6>To <%= booking.end_date %></h6>
+              <p>€<%= booking.mask.price%> per day</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+
+  <h1>Your uploaded masks</h1>
+  <% if @user.masks %>
+    <div class="row justify-content-around text-center">
+      <% @user.masks.each do |mask| %>
+        <div class="card-product m-4 col-lg-2 col-md-4 col-sm-12">
+          <div class="border-card">
+            <div class="card__image-container">
+            <%= cl_image_tag mask.photo.key%>
+            </div>
+          </div>
+
+          <div class="card__content">
+            <h5><%= link_to(mask.name, mask_path(mask)) %></h3>
+            <h6><%= mask.description %></h5>
+            <p>€<%= mask.price%> per day</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

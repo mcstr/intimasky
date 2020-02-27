@@ -22,7 +22,7 @@ class BookingsController < ApplicationController
     # @booking.start_date = params[:booking][:start_date].split("to")[0].strip
     # @booking.end_date = params[:booking][:start_date].split("to")[1].strip
     if @booking.save
-      redirect_to mask_path(@mask)
+      redirect_to dashboard_path
     else
       render :new
     end
