@@ -8,6 +8,8 @@ class Mask < ApplicationRecord
   validates :photo, attached: true
   validates :category, presence: true
   validates :address, presence: true
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 
   def unavailable_dates
     bookings.pluck(:start_date, :end_date).map do |range|
@@ -16,3 +18,4 @@ class Mask < ApplicationRecord
   end
 
 end
+
