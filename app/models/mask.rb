@@ -1,4 +1,4 @@
-CATEGORIES = ['dog', 'cat']
+CATEGORIES = ['bear', 'cat', 'dog', 'horse', 'mouse', 'rabbit']
 class Mask < ApplicationRecord
   has_one_attached :photo
   belongs_to :user
