@@ -1,25 +1,37 @@
-<div class="container-mask">
-    <div class="container" id="search">
-        <section class="search-header">
+<div class="container-mask text-center">
+    <div class="" id="search">
+        <section class="search-header d-flex flex-column">
             <h1>What type of mask are you looking for?</h1>
             <form>
                 <div class="form-group text-center search-form">
                     <!-- <label for="exampleInputEmail1">Search</label> -->
                     <input type="text" class="form-control text-center search-bar" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search">
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                </div>
+
                 <button type="submit" class="button">Submit</button>
+                </div>
             </form>
         </section>
         <hr>
-        <section class="featured-row row justify-content-around">
-            <h2>Featured Categories</h2>
-            <ul class="featered-categories">
-                <li class="card border-0 col-lg-3" id="card1"><a href="/masks">
-                        <%= link_to 'Cat', '/masks' %></a></li>
-                <li class="card border-0 col-lg-3" id="card2"><a href="">Horse</a></li>
-                <li class="card border-0 col-lg-3" id="card3"><a href="">Gas</a></li>
-            </ul>
-        </section>
+<h2 class="text-center pb-5">Featured Masks</h2>
+            <div class="row justify-content-around">
+              <% masks = Mask.all %>
+              <% masks.each do |mask| %>
+                <div class="card-product m-4 col-lg-2 col-md-6 col-sm-12">
+                  <div class="border-card">
+                    <div class="card__image-container">
+                    <%= cl_image_tag mask.photo.key%>
+                    </div>
+                  </div>
+
+                  <div class="card__content">
+                    <h5><%= link_to(mask.name, mask_path(mask)) %></h3>
+                    <h6><%= mask.description %></h5>
+                    <p>€<%= mask.price%> per day</p>
+                  </div>
+                </div>
+              <% end %>
+            </div>
     </div>
 </div>
+
