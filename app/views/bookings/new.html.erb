@@ -1,4 +1,5 @@
 <div class="form-container">
   <%= render "form" %>
   <div class="widget-content" data-unavailable="<%= @mask.unavailable_dates.to_json %>"></div>
+  <%= link_to 'Back to mask', mask_path(@mask), class: "button" %>
 </div>
