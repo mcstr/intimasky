@@ -4,34 +4,38 @@
     <h1>
     </h1>
     <div class="show-content">
-      <div id="image-show" class="col">
-        <% if @mask.photo.attached? %>
-         <%= cl_image_tag @mask.photo.key%>
-        <% end %>
+      <div class="col-6">
+        <div id="image-show">
+          <% if @mask.photo.attached? %>
+           <%= cl_image_tag @mask.photo.key%>
+          <% end %>
+        </div>
       </div>
-      <div id="image-info" class="col">
-        <div id = "mask-name">
-          <h1>
-            <%= @mask.name.capitalize %>
-          </h1>
-        </div>
-        <div id="mask-price">
-          <h2>
-            €<%= @mask.price %> per day
-          </h2>
-        </div>
-        <div id="mask-description">
-          <p>
-            <%= @mask.description %>
-          </p>
-        </div>
-        <div id="mask-category">
-          <p>
-            Category: <%= @mask.category %>
-          </p>
-        </div>
-        <div>
-          <%= link_to 'Book', new_mask_booking_path(@mask), class:"weird-book submit-button", id:"book-button" %>
+      <div class="col-6">
+        <div id="image-info">
+          <div id = "mask-name">
+            <h1>
+              <%= @mask.name.capitalize %>
+            </h1>
+          </div>
+          <div id="mask-price">
+            <h2>
+              €<%= @mask.price %> per day
+            </h2>
+          </div>
+          <div id="mask-description">
+            <p>
+              <%= @mask.description %>
+            </p>
+          </div>
+          <div id="mask-category">
+            <p>
+              Category: <%= @mask.category %>
+            </p>
+          </div>
+          <div>
+            <%= link_to 'Book', new_mask_booking_path(@mask), class:"weird-book submit-button", id:"book-button" %>
+          </div>
         </div>
       </div>
     </div>
