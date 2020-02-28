@@ -15,10 +15,10 @@
     overflow: hidden;
 
     &:hover{
+      transition-duration: 0.5s;
       background-color:white;
       text-decoration: none;
       color: #A01170;
-      transition-duration: 0.5s
       }
 
 }
