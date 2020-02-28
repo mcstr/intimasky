@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition-duration: 0.5s;
 
     &:hover{
       font-size: .8em;
@@ -20,6 +21,5 @@
       background-color: #fff;
       text-decoration: none;
       color: #A01170;
-      transition-duration: 0.5s;
       }
 }

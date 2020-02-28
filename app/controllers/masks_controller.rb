@@ -11,6 +11,14 @@ class MasksController < ApplicationController
     else
       @masks = Mask.all
     end
+    @masks = Mask.geocoded #returns mask with coordinates
+
+    @markers = @masks.map do |mask|
+      {
+        lat: mask.latitude,
+        lng: mask.longitude
+      }
+    end
   end
 
   def show
