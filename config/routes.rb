@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/dashboard', to:"pages#dashboard"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :masks do
-    resources :bookings, except: [:update, :edit]
+    resources :bookings, only: [:index, :new, :create]
   end
+    resources :bookings, only: [ :show, :edit, :update, :destroy ]
 end
