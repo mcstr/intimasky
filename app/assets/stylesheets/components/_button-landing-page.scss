@@ -4,7 +4,7 @@
     height: 40px;
     width: 160px;
     border: 2px solid #fff;
-    margin: 25px 100px 25px 25px;
+    margin: 25px 100px 5px 25px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition-duration: 0.5s;
 
     &:hover{
       font-size: .8em;
@@ -20,6 +21,5 @@
       background-color: #fff;
       text-decoration: none;
       color: #A01170;
-      transition-duration: 0.5s;
       }
 }

@@ -76,7 +76,7 @@
 }
 
 
-h1{
+.show-content h1{
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -141,7 +141,7 @@ font-weight: bold;
   font-size: 17px;
 }
 
-#show-buttons{
+.show-buttons{
   display: flex;
   justify-content: space-around;
 }

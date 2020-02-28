@@ -5,17 +5,17 @@
             <div class="text-center search-form">
               <%= simple_form_for :search, method: :get, url: masks_path do |f| %>
                 <%= f.input :query, label: false, placeholder: "Search", input_html: { class: "text-center search-bar"} %>
-                <%= f.submit 'Submit', class: "button" %>
+                <%= f.submit 'Submit', class: "submit-button" %>
               <% end %>
             </div>
-
         </section>
       </div>
         <hr>
 <h2 class="text-center pb-5">Featured Masks</h2>
-            <div class="row justify-content-around">
+            <div class="row justify-content-center">
               <% masks = Mask.all %>
-              <% masks.each do |mask| %>
+              <% selected_masks = masks.sample(4) %>
+              <% selected_masks.each do |mask| %>
                 <div class="card-product m-4 col-lg-2 col-md-6 col-sm-12">
                   <div class="border-card">
                     <div class="card__image-container">
