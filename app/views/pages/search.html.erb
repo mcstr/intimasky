@@ -5,7 +5,7 @@
             <div class="text-center search-form">
               <%= simple_form_for :search, method: :get, url: masks_path do |f| %>
                 <%= f.input :query, label: false, placeholder: "Search", input_html: { class: "text-center search-bar"} %>
-                <%= f.submit 'Submit', class: "button" %>
+                <%= f.submit 'Submit', class: "submit-button" %>
               <% end %>
             </div>
         </section>
