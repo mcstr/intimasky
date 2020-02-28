@@ -42,6 +42,8 @@
               <%= link_to "Remove", mask_path(mask.id),
                   method: :delete,
                   data: { confirm: "Are you sure?" }, class: "submit-button" %>
+              <%= link_to "Edit", edit_mask_path(mask),
+                  method: :get %>
             </div>
           </div>
         <% end %>
