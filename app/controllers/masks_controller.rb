@@ -11,14 +11,7 @@ class MasksController < ApplicationController
     else
       @masks = Mask.all
     end
-    @masks = Mask.geocoded #returns mask with coordinates
-
-    @markers = @masks.map do |mask|
-      {
-        lat: mask.latitude,
-        lng: mask.longitude
-      }
-    end
+    geocode(@masks)
   end
 
   def show
@@ -52,7 +45,7 @@ class MasksController < ApplicationController
   def destroy
     @mask = Mask.find(params[:id])
     @mask.destroy
-    redirect_to masks_path
+    redirect_to dashboard_path
   end
 
   private
@@ -60,7 +53,14 @@ class MasksController < ApplicationController
     params.require(:mask).permit(:name, :description, :category, :price, :photo, :address)
   end
 
-  # def search_params
-  #   params.require(:search).permit(:query)
-  # end
+  def geocode(masks)
+    masks.geocoded #returns mask with coordinates
+
+    @markers = masks.map do |mask|
+      {
+        lat: mask.latitude,
+        lng: mask.longitude
+      }
+    end
+  end
 end

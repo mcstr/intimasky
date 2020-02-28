@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_mask, only: [:new, :create, :destroy]
+  before_action :set_mask, only: [:new, :create]
 
   def index
      @bookings = current_user.bookings
@@ -15,7 +15,9 @@ class BookingsController < ApplicationController
   end
 
   def destroy
+    @booking = Booking.find(params[:id])
     @booking.destroy
+    redirect_to dashboard_path
   end
 
   def create

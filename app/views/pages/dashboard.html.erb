@@ -14,6 +14,9 @@
               <h6>From <%= booking.start_date %></h6>
               <h6>To <%= booking.end_date %></h6>
               <p>€<%= booking.mask.price%> per day</p>
+              <%= link_to "Cancel", booking_path(booking),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" }, class: "submit-button" %>
             </div>
           </div>
         <% end %>
@@ -36,7 +39,9 @@
               <h5><%= link_to(mask.name, mask_path(mask)) %></h5>
               <h6><%= mask.description %></h6>
               <p>€<%= mask.price%> per day</p>
-              <%= link_to "Remove", mask_path(mask),
+              <%= link_to "Edit", edit_mask_path(mask), class: "submit-button",
+                  method: :get %>
+              <%= link_to "Remove", mask_path(mask.id),
                   method: :delete,
                   data: { confirm: "Are you sure?" }, class: "submit-button" %>
             </div>

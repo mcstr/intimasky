@@ -16,7 +16,7 @@
         </div>
         <div id="mask-price">
           <h2>
-            <%= @mask.price %>,00€
+            <%= @mask.price %>,00€ per day
           </h2>
         </div>
         <div id="mask-description">
@@ -34,11 +34,9 @@
         </div>
       </div>
     </div>
-    <div id="show-buttons">
+    <div class="show-buttons">
     <ul class="action-list">
-    <li><%= link_to 'Edit', edit_mask_path(@mask), class:"weird-button button"%></li>
-    <li><%= link_to 'All', masks_path, class:"weird-button button" %></li>
-    <li><%= link_to 'Delete', mask_path(@mask), class:"weird-button button", method: :delete %></li>
+    <li><%= link_to 'Back to Masks', masks_path, class:"weird-button button" %></li>
     </ul>
     </div>
     </div>
