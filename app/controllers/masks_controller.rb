@@ -52,7 +52,7 @@ class MasksController < ApplicationController
   def destroy
     @mask = Mask.find(params[:id])
     @mask.destroy
-    redirect_to masks_path
+    redirect_to dashboard_path
   end
 
   private
