@@ -106,18 +106,20 @@ body {
 }
 
 #image-show img {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-style: solid;
-    border-color: #A01170;
     object-fit: cover;
 }
 
 #image-show {
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #A01170;
 }
 
 #image-info {
