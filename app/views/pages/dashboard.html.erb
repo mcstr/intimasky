@@ -39,11 +39,11 @@
               <h5><%= link_to(mask.name, mask_path(mask)) %></h5>
               <h6><%= mask.description %></h6>
               <p>€<%= mask.price%> per day</p>
+              <%= link_to "Edit", edit_mask_path(mask), class: "submit-button",
+                  method: :get %>
               <%= link_to "Remove", mask_path(mask.id),
                   method: :delete,
                   data: { confirm: "Are you sure?" }, class: "submit-button" %>
-              <%= link_to "Edit", edit_mask_path(mask), class: "submit-button",
-                  method: :get %>
             </div>
           </div>
         <% end %>
