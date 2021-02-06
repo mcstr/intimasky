@@ -1,3 +1,4 @@
+
 <%= simple_form_for @mask do |f|%>
   <%= f.input :name %>
   <%= f.input :description %>
@@ -5,5 +6,7 @@
   <%= f.input :address %>
   <%= f.input :category, collection: CATEGORIES %>
   <%= f.input :photo, as: :file %>
+  <div class="button-add">
   <%= f.submit :class => "submit-button"%>
+  </div>
 <% end %>
