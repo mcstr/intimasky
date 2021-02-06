@@ -63,6 +63,7 @@
   // border-color: #DE5887 !important;
   color: #de5887 !important;
   font-weight: bold !important;
+  transition: transform 1s ease-in;
 }
 
 .btn.btn-primary:hover {
@@ -71,10 +72,6 @@
   box-shadow: 0px 0px 5px #de5887 !important;
   color: #de5887 !important;
   font-weight: bold !important;
-}
-
-.btn.btn-primary:active {
-  transform: scale(0.98%);
 }
 .feature-card {
   background-color: pink;
