@@ -1,9 +1,19 @@
-.form-container
-{
+.form-container {
   padding: 60px;
 }
 
-.form-login{
-  height: 85vh;
+.form-login {
+  height: 90vh;
   padding: 20% 30% 30% 30%;
+}
+
+.form-login a {
+  text-decoration: none;
+  color: crimson;
+}
+
+.form-login .login-button {
+  margin-bottom: 1.2rem;
+  background: pink;
+  color: #fff;
 }
