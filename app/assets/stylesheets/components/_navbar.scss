@@ -1,7 +1,6 @@
-
 .navbar-lewagon {
   display: flex;
-  justify-content: space-between!important;
+  justify-content: space-between !important;
   background-color: transparent;
   transition: 0.5s background-color ease;
 }
@@ -15,10 +14,28 @@
 }
 
 .navbar-lewagon-grey {
-  background-color: #36454F;
+  background-color: #36454f;
 }
 
 .avatar {
-  border: 2px solid #A01170;
+  border: 2px solid #a01170;
 }
 
+.navbar-brand img {
+  background: red;
+}
+
+.nav-link-login {
+  color: #fff !important;
+}
+
+.nav-link-login-crimsom {
+  color: crimson;
+}
+.crimsom {
+  color: crimson;
+}
+
+i {
+  font-size: 2rem;
+}
