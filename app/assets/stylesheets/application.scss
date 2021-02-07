@@ -26,6 +26,7 @@ body {
 .content {
   margin-top: 58px;
   background-color: #d0d0d0;
+
 }
 
 .container {
@@ -37,13 +38,31 @@ body {
   padding-bottom: 150px;
 }
 
+.add-form {
+  width: 600px;
+  margin-top: 60px;
+}
+
 .container-mask {
-  min-height: 100vh;
-  padding-top: 15px;
-  width: 99vw;
-  box-shadow: 0px 30px 30px;
-  margin: auto;
-  background-color: #d0d0d0;
+  height: auto;
+  min-height: 90vh;
+  background-color: #fec5bb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-add {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.back-index-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 h1,
@@ -53,3 +72,10 @@ h2 {
   color: #333;
   font-family: 'Raleway';
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .add-form {
+    width: auto;
+    margin-top: 
