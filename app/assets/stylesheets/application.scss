@@ -26,6 +26,7 @@ body {
 .content {
   margin-top: 58px;
   background-color: #d0d0d0;
+
 }
 
 .container {
@@ -61,6 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 h1,
@@ -71,9 +73,9 @@ h2 {
   font-family: 'Raleway';
 }
 
+
+
 @media only screen and (max-width: 768px) {
   .add-form {
     width: auto;
-    margin-top: 15px;
-  }
-}
+    margin-top: 
