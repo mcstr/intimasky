@@ -21,14 +21,21 @@
   border: 2px solid #a01170;
 }
 
+.navbar-brand img {
+  background: red;
+}
+
+.nav-link-login {
+  color: #fff !important;
+}
+
+.nav-link-login-crimsom {
+  color: #a01170 !important;
+}
 .crimsom {
   color: #a01170;
 }
 
-.bx-mask {
-  font-size: 36px;
-}
-
-.nav-item .active {
-  color: #a01170;
+i {
+  font-size: 2rem;
 }

@@ -1,1 +1,63 @@
 // Specific CSS for your home-page
+.main-container {
+  height: 90vh;
+  width: 100%;
+  background: url('https://images.unsplash.com/photo-1456725203480-0be828fcd7ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1751&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.typescript {
+  margin-bottom: 30rem;
+}
+
+.home-banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#banner-typed-text {
+  font-size: 30px;
+}
+
+.find-a-mask {
+  margin-right: 30rem;
+}
+
+.post-a-mask {
+  margin-left: 30rem;
+}
+.landing-page-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.landing-page-options {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-left: 35%;
+}
+
+@media only screen and (max-width: 768px) {
+  .typescript {
+    margin-bottom: 20rem;
+  }
+
+  .find-a-mask {
+    margin-right: 4rem;
+  }
+
+  .post-a-mask {
+    margin-left: 4rem;
+  }
+}

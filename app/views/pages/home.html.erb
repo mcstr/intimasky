@@ -1,11 +1,15 @@
-<div>
+<div class='main-container'>
     <div class="home-banner">
         <p class="typescript">
             <span id="banner-typed-text"></span>
         </p>
         <div class="landing-page-row">
-          <%= link_to 'Find A Mask', '/search', class:"button-landing-page"%>
-          <%= link_to 'Post Your Mask', '/masks/new', class:"button-landing-page"%>
+            <div class="find-a-mask">
+            <%= link_to 'Find A Mask', '/search', class:"button-landing-page"%>
+            </div>
+            <div class="post-your-mask">
+            <%= link_to 'Post Your Mask', '/masks/new', class:"button-landing-page"%>
+            </div>
         </div>
     </div>
     <%= render "shared/content_options" %>
