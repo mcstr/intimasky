@@ -8,9 +8,9 @@
   border-radius: 6px;
   padding: 1rem;
   color: #aaa;
-  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
-    0 0 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  margin: 2rem 2rem;
 }
 
 .card-product a {
@@ -19,26 +19,26 @@
 
 .card-product img {
   display: block;
-  width: 97%;
+  width: auto;
   object-fit: cover;
   max-width: 97%;
   max-height: 50%;
   margin: 20px auto;
-  border: 3px solid #A01170;
+  border: 3px solid #a01170;
   filter: grayscale(60%);
-    &:hover{
-      filter: grayscale(0%);
-      transition-duration: 0.5s;
-    }
+  &:hover {
+    filter: grayscale(0%);
+    transition-duration: 0.5s;
+  }
 }
 
 .card-product a {
-  text-decoration:none;
+  text-decoration: none;
   color: white;
-      &:hover{
-      text-decoration: none;
-      color: #A01170;
-    }
+  &:hover {
+    text-decoration: none;
+    color: #a01170;
+  }
 }
 
 .card__image-container img {
