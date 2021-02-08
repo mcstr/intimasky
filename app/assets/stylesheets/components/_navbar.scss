@@ -8,6 +8,11 @@
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
+.navbar-collapse ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
@@ -30,14 +35,8 @@
 }
 
 .nav-link-login-crimsom {
-
   color: #a01170 !important;
 }
 .crimsom {
   color: #a01170;
-
-}
-
-i {
-  font-size: 2rem;
 }
