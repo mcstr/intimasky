@@ -12,11 +12,11 @@
       </div>
         <hr>
 <h2 class="text-center pb-5">Featured Masks</h2>
-            <div class="row justify-content-center">
+            <div class="featured-masks">
               <% masks = Mask.all %>
               <% selected_masks = masks.sample(4) %>
               <% selected_masks.each do |mask| %>
-                <div class="card-product m-4 col-lg-2 col-md-6 col-sm-12">
+                <div class="card-product">
                   <div class="border-card">
                     <div class="card__image-container">
                     <%= cl_image_tag mask.photo.key%>

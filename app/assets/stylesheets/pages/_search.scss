@@ -73,10 +73,16 @@
   color: #de5887 !important;
   font-weight: bold !important;
 }
-.feature-card {
-  background-color: pink;
-  display: inline;
-  height: 375px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+.featured-masks {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .featured-masks {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
 }
