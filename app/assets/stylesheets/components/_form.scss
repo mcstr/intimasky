@@ -10,22 +10,20 @@
 
 .form-login a {
   text-decoration: none;
-  color: crimson;
+  color: #a01170;
 }
 
 .form-login .login-button {
   margin-bottom: 1.2rem;
-  background: pink;
+  background: #a01170;
   color: #fff;
 }
 
-.form-login a {
-  text-decoration: none;
-  color: crimson;
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #a01170 !important;
 }
 
-.form-login .login-button {
-  margin-bottom: 1.2rem;
-  background: pink;
-  color: #fff;
+.form-login h2 {
+  color: #cd80fa;
 }
