@@ -37,7 +37,6 @@
   object-fit: cover;
   max-width: 97%;
   max-height: 50%;
-  margin: 20px auto;
   border: 3px solid #a01170;
 }
 
@@ -144,7 +143,6 @@ img {
 // }
 
 #show-book-button {
-  margin-top: 60px;
   text-decoration: none;
   text-align: center;
 }
@@ -220,6 +218,7 @@ img {
   }
   .show-card-product {
     margin-top: 3.5rem;
+    padding: 2rem;
   }
 
   #mask-name {
@@ -237,5 +236,6 @@ img {
   .show-card-product img {
     max-height: 50%;
     max-width: 50%;
+    margin-top: 10px;
   }
 }
