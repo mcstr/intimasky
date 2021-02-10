@@ -27,3 +27,9 @@
 .form-login h2 {
   color: #cd80fa;
 }
+
+@media only screen and (max-width: 768px) {
+  .add-form h2 {
+    font-size: 1.5rem !important;
+  }
+}
