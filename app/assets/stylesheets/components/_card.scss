@@ -46,3 +46,10 @@
   min-height: 200px;
   background-position: center;
 }
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

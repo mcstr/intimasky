@@ -14,12 +14,15 @@
 
 .featured-cards {
   display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-index {
-  display: inline-block;
-  // margin-top: 20px;
-}
+// .card-index {
+//   display: inline-block;
+//   // margin-top: 20px;
+// }
 
 .map-index {
   height: 100%;

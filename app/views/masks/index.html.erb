@@ -3,9 +3,9 @@
         <section class="card-index">
             <h1>What do you desire?</h1>
             <% if @masks %>
-            <div class="row justify-content-center">
+            <div class="featured-cards">
                 <% @masks.shuffle.each do |mask| %>
-                <div class="card-product m-4 col-lg-2 col-md-4 col-sm-8 col-8">
+                <div class="card-product">
                     <div class="border-card">
                         <div class="card__image-container">
                             <%= cl_image_tag mask.photo.key%>
