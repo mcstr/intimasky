@@ -233,4 +233,9 @@ img {
     margin: 0;
     margin-top: 0.3rem;
   }
+
+  .show-card-product img {
+    max-height: 50%;
+    max-width: 50%;
+  }
 }
