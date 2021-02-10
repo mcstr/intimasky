@@ -214,6 +214,11 @@ img {
     background-color: #fec5bb;
     height: 90vh;
   }
+
+  .show-card__image-container {
+    display: flex;
+    justify-content: center;
+  }
   .show-card-product {
     margin-top: 3.5rem;
     padding: 2rem;
