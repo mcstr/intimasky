@@ -59,3 +59,9 @@ h1 {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  .find-a-mask {
+    margin-right: 2rem;
+  }
+}
