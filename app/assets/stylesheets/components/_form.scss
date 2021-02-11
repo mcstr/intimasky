@@ -28,6 +28,20 @@
   color: #cd80fa;
 }
 
+.back-to-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#new_booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   .add-form h2 {
     font-size: 1.5rem !important;
