@@ -36,7 +36,7 @@
   width: auto;
   max-width: 70%;
   max-height: 25%;
-  // object-fit: cover;
+  object-fit: contain;
   border: 3px solid #a01170;
 }
 
@@ -207,7 +207,7 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 1080px) and (min-width: 378px) {
+@media only screen and (max-width: 1920px) and (min-width: 378px) {
   .show-main-container {
     background-color: #fec5bb;
     height: 90vh;
@@ -236,19 +236,57 @@ body {
   }
 
   .show-card-product img {
-    // height: auto;
-    // width: auto;
-    // max-width: 100px;
-    // max-height: 100px;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
     margin-top: 10px;
   }
 }
-@media only screen and (max-with: 376px) {
+@media only screen and (max-width: 376px) {
   .show-card-product img {
-    // height: auto;
-    // width: auto;
-    max-width: 100px;
-    max-height: 100px;
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-height: 731px) {
+  .show-card-product img {
+    height: auto;
+    width: auto;
+    max-width: 120px;
+    max-height: 120px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-height: 667px) {
+  .show-card-product img {
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 3px;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
+    margin-top: 5% !important;
+  }
+  h6 {
+    font-size: 1rem !important;
+    margin-top: 2% !important;
+  }
+
+  #mask-category {
+    margin-top: 2%;
+  }
+
+  #book-button {
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
 }
